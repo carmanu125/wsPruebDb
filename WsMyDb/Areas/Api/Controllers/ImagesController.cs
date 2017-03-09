@@ -31,6 +31,11 @@ namespace WsMyDb.Areas.Api.Controllers
             return Json(database.InsertarCliente(item));
         }
 
-
+        [HttpGet]
+        public JsonResult Clientes()
+        {
+            return Json(database.ObtenerClientes(),
+                        JsonRequestBehavior.AllowGet);
+        }
     }
 }
