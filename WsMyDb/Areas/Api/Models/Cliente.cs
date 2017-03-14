@@ -10,5 +10,7 @@ namespace WsMyDb.Areas.Api.Models
         public int id { set; get; }
         public string cedula { set; get; }
         public string nombre { set; get; }
+        public string stringFoto { set; get; }
+        public string nameFoto { set; get; }
     }
 }

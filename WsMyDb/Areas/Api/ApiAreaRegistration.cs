@@ -41,6 +41,17 @@ namespace WsMyDb.Areas.Api
                     id = UrlParameter.Optional
                 }
             );
+
+            context.MapRoute(
+                "clienteImage",
+                "Api/Images/clienteImage/{id}",
+                new
+                {
+                    controller = "Images",
+                    action = "clienteImage",
+                    id = UrlParameter.Optional
+                }
+            );
         }
     }
 }
